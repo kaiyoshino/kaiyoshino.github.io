@@ -64,23 +64,7 @@ canvas {
   font-size: 140%;
 }
 
-@media only screen and (max-device-width: 640px){
-  .content {font-size: 35pt;}
-  #me{width: 50%;
-    height: 50%;}
-  #name{font-size:90pt}
-  .subtitle{font-size:35pt}
-  .nav{font-size:39pt}
-}
 
-@media only screen and (max-device-width: 1080px) and (-webkit-device-pixel-ratio: 3){
-  .content {font-size: 50pt;}
-  #me{width: 40%;
-    height: 40%;}
-  #name{font-size:120pt}
-  .subtitle{font-size:50pt}
-  .nav{font-size:58pt}
-}
 
 /****************************************************/
 /* About Page */
@@ -90,8 +74,8 @@ canvas {
   background: white;
   color: black;
   border-radius: 10px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 22%;
+  margin-right: 22%;
   height: 70vh;
   box-shadow: 8px 8px 8px black;
 }
@@ -102,3 +86,34 @@ canvas {
   font-style: bold; 
 }
 
+
+
+
+
+
+
+
+
+@media only screen and (max-device-width: 640px){
+  .partial {
+  margin-left: 10%;
+  margin-right: 10%}
+  .content {font-size: 35pt;}
+  #me{width: 50%;
+    height: 50%;}
+  #name{font-size:90pt}
+  .subtitle{font-size:35pt}
+  .nav{font-size:39pt}
+}
+
+@media only screen and (max-device-width: 1080px) and (-webkit-device-pixel-ratio: 3){
+  .partial {
+  margin-left: 15%;
+  margin-right: 15%}
+  .content {font-size: 50pt;}
+  #me{width: 40%;
+    height: 40%;}
+  #name{font-size:120pt}
+  .subtitle{font-size:50pt}
+  .nav{font-size:58pt}
+}
