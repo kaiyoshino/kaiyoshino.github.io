@@ -69,19 +69,19 @@ canvas {
 
 @media only screen and (max-device-width: 640px){
  
-#me{width: 45%;
-  height: 45%;}
+#me{width: 50%;
+  height: 50%;}
 #name{font-size:80pt}
 .subtitle{font-size:35pt}
 .nav{font-size:40pt}
 }
 
 @media only screen and (max-device-width: 1080px) and (-webkit-device-pixel-ratio: 3){
-#me{width: 35%;
-  height: 35%;}
-#name{font-size:160pt}
-.subtitle{font-size:70pt}
-.nav{font-size:80pt}
+#me{width: 40%;
+  height: 40%;}
+#name{font-size:120pt}
+.subtitle{font-size:50pt}
+.nav{font-size:58pt}
 }
 
 
