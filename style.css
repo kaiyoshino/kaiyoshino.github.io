@@ -69,8 +69,8 @@ canvas {
 
 @media only screen and (max-device-width: 640px){
  
-#me{width: 40%;
-  height: 40%;}
+#me{width: 45%;
+  height: 45%;}
 #name{font-size:80pt}
 .subtitle{font-size:35pt}
 .nav{font-size:40pt}
