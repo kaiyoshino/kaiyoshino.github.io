@@ -98,7 +98,7 @@ canvas {
   .partial {
   margin-left: 10%;
   margin-right: 10%}
-  .content {font-size: 35pt;}
+  .content {font-size: 30pt;}
   #me{width: 50%;
     height: 50%;}
   #name{font-size:90pt}
@@ -110,7 +110,7 @@ canvas {
   .partial {
   margin-left: 15%;
   margin-right: 15%}
-  .content {font-size: 50pt;}
+  .content {font-size: 45pt;}
   #me{width: 40%;
     height: 40%;}
   #name{font-size:120pt}
