@@ -75,9 +75,9 @@ canvas {
 }
 
 @media only screen and (max-device-width: 1080px) and (-webkit-device-pixel-ratio: 3){
-#name{font-size:30pt}
-.subtitle{font-size:12pt}
-.nav{font-size:13pt}
+#name{font-size:80pt}
+.subtitle{font-size:30pt}
+.nav{font-size:40pt}
 }
 
 
