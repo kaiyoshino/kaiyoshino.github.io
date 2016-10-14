@@ -45,11 +45,11 @@ canvas {
 
 p {
 	margin: .2em;
-  font-size: 14pt;
+  font-size: 24px;
 }
 
 #name {
-	font-size:44pt;
+	font-size:74px;
 }
 
 #me {
@@ -61,7 +61,7 @@ p {
 .landing a {
   padding-left: .5em;
   font-style: italic;
-  font-size: 16pt;
+  font-size: 28px;
 }
 
 
