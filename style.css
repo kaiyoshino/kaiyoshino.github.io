@@ -41,29 +41,44 @@ canvas {
 	color: #ffffff;
 	font-family: 'Open Sans', sans-serif;
 	text-align:center;
+
 }
 
-p {
-	margin: .2em;
-  font-size: 24px;
+
+#me {
+  width: 20%;
+  height: 20%;
+  border-radius: 100%;
 }
 
 #name {
-	font-size:74px;
+  font-size: 450%;
+  margin: .1em;
 }
 
-#me {
-	width: 20%;
-    height: 20%;
-    border-radius: 100%;
+.subtitle {
+	font-size: 125%;
+  margin: .1em;
 }
 
-.landing a {
+
+.nav {
   padding-left: .5em;
   font-style: italic;
-  font-size: 28px;
+  font-size: 150%;
 }
 
+@media only screen and (max-device-width: 640px){
+#name{font-size:30pt}
+.subtitle{font-size:12pt}
+.nav{font-size:13pt}
+}
+
+@media only screen and (max-device-width: 1080px) and (-webkit-device-pixel-ratio: 3){
+#name{font-size:30pt}
+.subtitle{font-size:12pt}
+.nav{font-size:13pt}
+}
 
 
 
