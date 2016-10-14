@@ -50,32 +50,32 @@ angular.module('PortfolioApp', ['ui.router', 'ui.bootstrap'])
 			text: 'This website finds concerts and music festivals and places them on a map for you. You can filter by city or date and even listen to the artist\'s top hit on spotify!',
 			id: 0,
 			name: 'ConcertFindr',
-			link: 'http://students.washington.edu/dhan206/INFO343/Group_Project/#/',
-			github: 'http://students.washington.edu/dhan206/INFO343/Group_Project/#/'
+			link: 'http://students.washington.edu/kaiyosh/info343/challenges/Group_Project/#/',
+			github: 'https://github.com/dhan206/Group_Project'
 		},
 		{
 			image: 'img/concerts.png',
 			text: 'This website finds concerts and music festivals and places them on a map for you. You can filter by city or date and even listen to the artist\'s top hit on spotify!',
 			id: 1,
 			name: 'ConcertFindr',
-			link: 'http://students.washington.edu/dhan206/INFO343/Group_Project/#/',
-			github: 'http://students.washington.edu/dhan206/INFO343/Group_Project/#/'
+			link: 'http://students.washington.edu/kaiyosh/info343/challenges/Group_Project/#/',
+			github: 'https://github.com/dhan206/Group_Project'
 		},
 		{
 			image: 'img/concerts.png',
 			text: 'This website finds concerts and music festivals and places them on a map for you. You can filter by city or date and even listen to the artist\'s top hit on spotify!',
 			id: 2,
 			name: 'ConcertFindr',
-			link: 'http://students.washington.edu/dhan206/INFO343/Group_Project/#/',
-			github: 'http://students.washington.edu/dhan206/INFO343/Group_Project/#/'
+			link: 'http://students.washington.edu/kaiyosh/info343/challenges/Group_Project/#/',
+			github: 'https://github.com/dhan206/Group_Project'
 		},
 		{
 			image: 'img/concerts.png',
 			text: 'This website finds concerts and music festivals and places them on a map for you. You can filter by city or date and even listen to the artist\'s top hit on spotify!',
 			id: 3,
 			name: 'ConcertFindr',
-			link: 'http://students.washington.edu/dhan206/INFO343/Group_Project/#/',
-			github: 'http://students.washington.edu/dhan206/INFO343/Group_Project/#/'
+			link: 'http://students.washington.edu/kaiyosh/info343/challenges/Group_Project/#/',
+			github: 'https://github.com/dhan206/Group_Project'
 		}
 	];
 })
@@ -95,10 +95,10 @@ angular.module('PortfolioApp', ['ui.router', 'ui.bootstrap'])
 
 
 
-			    // 	<a href="http://students.washington.edu/dhan206/INFO343/Group_Project/#/">
+			    // 	<a href="https://github.com/dhan206/Group_Project">
 			    //     	<img class="car-img" src="img/concerts.png" alt="ConcertFindr" >
 			    //   	</a>
-			    //   	<h2><a class="link" href="http://students.washington.edu/dhan206/INFO343/Group_Project/#/">ConcertFindr</a></h2>
+			    //   	<h2><a class="link" href="https://github.com/dhan206/Group_Project">ConcertFindr</a></h2>
 				  	// <p>This website finds concerts and music festivals and places them on a map for you. You can filter by city or date and even listen to the artist's top hit on spotify!</p>
 				  	// <p><a class="link" href="https://github.com/dhan206/Group_Project">GitHub</a></p>
 			    // </div>

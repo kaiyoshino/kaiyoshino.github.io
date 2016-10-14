@@ -119,10 +119,8 @@ body {
 
 
 .content {
-  padding-top: 5%;
-  padding-left: 5%;
-  padding-right: 5%;
-  font-size: 140%;
+  padding: 5%;
+  font-size: 160%;
 }
 
 
@@ -147,7 +145,7 @@ body {
 
 .carousel-img {
   margin:auto;
-  width: 100%;
+  width: 90%;
 }
 
 #slides_control {
@@ -162,11 +160,18 @@ body {
     position: relative;
     left: auto;
     right: auto;
+    font-size: 125%;
 }
 
 .carousel-caption p {
     color: black;
 }
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+
 
 
 
