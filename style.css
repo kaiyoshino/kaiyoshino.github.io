@@ -96,8 +96,8 @@ canvas {
 
 @media only screen and (max-device-width: 640px){
   .partial {
-  margin-left: 10%;
-  margin-right: 10%}
+  margin-left: 5%;
+  margin-right: 5%}
   .content {font-size: 30pt;}
   #me{width: 50%;
     height: 50%;}
@@ -108,8 +108,8 @@ canvas {
 
 @media only screen and (max-device-width: 1080px) and (-webkit-device-pixel-ratio: 3){
   .partial {
-  margin-left: 15%;
-  margin-right: 15%}
+  margin-left: 12%;
+  margin-right: 12%}
   .content {font-size: 45pt;}
   #me{width: 40%;
     height: 40%;}
