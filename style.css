@@ -1,7 +1,42 @@
+a {
+  color: #4169E1;
+}
 
-/****************************************************/
-/* Landing Page */
-/****************************************************/
+a:link {
+  color: #4169E1;
+  text-decoration: none;
+}
+
+a:visitied {
+  color: #4169E1;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4169E1;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #4169E1 !important;
+  text-decoration: underline;
+}
+
+.partial {
+  background: white;
+  color: black;
+  border-radius: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
+  min-height: 60vh;
+  box-shadow: 8px 8px 8px black;
+}
+
+.container-nav {
+  padding-top: 2%;
+}
+
+
 
 /* gradient fallbacks taken from csstricks.com */
 body {
@@ -18,21 +53,21 @@ body {
   background-image: -o-linear-gradient(left, #350032, #0b354c);
   /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
   background-image: linear-gradient(to right, #350032, #0b354c);
-  overflow: hidden;
+/*  overflow: hidden;*/
 }
 
-html {
-  height: 100%;
-}
+/*canvas { 
+  width: 100%; 
+  height: 100%; 
+}*/
 
-canvas { 
-	width: 100%; 
-	height: 100%; 
-}
+/****************************************************/
+/* Landing Page */
+/****************************************************/
 
 .landing {
 	position: absolute;
-	top: 15%; 
+	top: 13%; 
   width: 100%;
 	color: #ffffff;
 	font-family: 'Open Sans', sans-serif;
@@ -58,11 +93,22 @@ canvas {
 }
 
 
-.nav {
+.navigation {
   margin: .9%;
   font-style: italic;
   font-size: 140%;
+  color: white;
 }
+
+.navbar {
+  display: inline !important;
+}
+
+/*html, body {
+  width: 100%;
+  height: 100%;
+}*/
+
 
 
 
@@ -70,34 +116,64 @@ canvas {
 /* About Page */
 /****************************************************/
 
-.partial {
-  background: white;
-  color: black;
-  border-radius: 10px;
-  margin-left: 22%;
-  margin-right: 22%;
-  min-height: 70vh;
-  box-shadow: 8px 8px 8px black;
-}
+
 
 .content {
-  padding: 5%;
-  font-size: 150%;
-  font-style: bold; 
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 140%;
 }
 
 
+/****************************************************/
+/* Connect Page */
+/****************************************************/
 
+.connect-images img {
+  width: 18%;
+  height: 18%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
 
+/****************************************************/
+/* Projects Page */
+/****************************************************/
 
+#slides_control > div{
+  height: 200px;
+}
 
+.carousel-img {
+  margin:auto;
+  width: 100%;
+}
+
+#slides_control {
+  position:absolute;
+  width: 400px;
+  left:50%;
+  top:20px;
+ margin-left:-200px;
+}
+
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+}
+
+.carousel-caption p {
+    color: black;
+}
 
 
 
 @media only screen and (max-device-width: 640px){
   .partial {
-  margin-left: 5%;
-  margin-right: 5%}
+  margin-left: 8%;
+  margin-right: 8%}
   .content {font-size: 30pt;}
   #me{width: 50%;
     height: 50%;}
@@ -108,8 +184,8 @@ canvas {
 
 @media only screen and (max-device-width: 1080px) and (-webkit-device-pixel-ratio: 3){
   .partial {
-  margin-left: 12%;
-  margin-right: 12%}
+  margin-left: 13%;
+  margin-right: 13%}
   .content {font-size: 45pt;}
   #me{width: 40%;
     height: 40%;}

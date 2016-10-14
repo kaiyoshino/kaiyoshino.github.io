@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html ng-app="PortfolioApp">
+<html ng-app="PortfolioApp" id="canvas">
 	<head>
 		<meta charset=utf-8>
 		<title>Kai Yoshino</title>
+		<link rel="shortcut icon" href="img/KY.png">
+ 		
+		
+		<!-- 
+		unuses
+		<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/flaticon.css"> 
 
-		<!-- bootstrap css -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+ 		-->	
+
+ 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8" />
+		
+		
 
 		<!-- my css -->
 		<link href="style.css" rel="stylesheet" type="text/css">
@@ -14,28 +24,33 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
 
 		<!-- js libraries -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="js/three.min.js"></script>
 		<script src="js/DeviceOrientationControls.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.2.0/ui-bootstrap-tpls.min.js"></script>
-		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		
 
 	</head>
 	<body>
-		<div id="canvas"></div>
-		<div class="container landing" ui-view ng-controller="LandingCtrl">
+		<div class="landing" ui-view ng-controller="LandingCtrl">
 			<img id="me" src="img/me.jpg"></img>
 			<p id="name">Kai Yoshino</p>
 			<p class="subtitle">Software Developer</p>
 			<p class="subtitle">UW Informatics</p>
-			<br><br>
-			<a class="nav" ui-sref="about">About</a>
-			<a class="nav" ui-sref="projects">Projects</a>
-			<a class="nav">Resume</a>
-			<a class="nav" ui-sref="connect">Connect</a>
+			<br>
+			<div class="navbar">
+				<a class="navigation" ui-sref="about">About</a>
+				<a class="navigation" ui-sref="projects">Projects</a>
+				<a class="navigation">Resume</a>
+				<a class="navigation" ui-sref="connect">Connect</a>
+				<br>
+				<a ui-sref="landing"><img class="navigation" id="landingbutton" src="img/KY.png"></img></a>
+			</div>
 		</div>
-		
+
 
 		<!-- my js -->
 		<script src="js/graphics.js"></script>

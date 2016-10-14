@@ -1,6 +1,7 @@
 var scene, camera, renderer, controls;
 var canvas = document.getElementById('canvas');
 
+
 // particles set up
 var particleCount = 5000;
 var particleGeometry = new THREE.SphereGeometry(2, 32, 32); // size, number of polys to form this circle

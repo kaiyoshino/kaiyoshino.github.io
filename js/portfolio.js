@@ -1,4 +1,4 @@
-angular.module('PortfolioApp' ,['ui.router', 'ui.bootstrap'])
+angular.module('PortfolioApp', ['ui.router', 'ui.bootstrap'])
 .controller('LandingCtrl', ['$scope', '$http', function($scope, $http) {
 
 }])
@@ -38,6 +38,48 @@ angular.module('PortfolioApp' ,['ui.router', 'ui.bootstrap'])
 	$urlRouterProvider.otherwise('/');
 })
 
+.controller('CarouselCtrl', function ($scope) {
+	// carousel stuff
+	$scope.myInterval = 5000;
+	$scope.noWrapSlides = false;
+	$scope.active = 0;
+	var currIndex = 0;
+	$scope.slides = [
+		{
+			image: 'img/concerts.png',
+			text: 'This website finds concerts and music festivals and places them on a map for you. You can filter by city or date and even listen to the artist\'s top hit on spotify!',
+			id: 0,
+			name: 'ConcertFindr',
+			link: 'http://students.washington.edu/dhan206/INFO343/Group_Project/#/',
+			github: 'http://students.washington.edu/dhan206/INFO343/Group_Project/#/'
+		},
+		{
+			image: 'img/concerts.png',
+			text: 'This website finds concerts and music festivals and places them on a map for you. You can filter by city or date and even listen to the artist\'s top hit on spotify!',
+			id: 1,
+			name: 'ConcertFindr',
+			link: 'http://students.washington.edu/dhan206/INFO343/Group_Project/#/',
+			github: 'http://students.washington.edu/dhan206/INFO343/Group_Project/#/'
+		},
+		{
+			image: 'img/concerts.png',
+			text: 'This website finds concerts and music festivals and places them on a map for you. You can filter by city or date and even listen to the artist\'s top hit on spotify!',
+			id: 2,
+			name: 'ConcertFindr',
+			link: 'http://students.washington.edu/dhan206/INFO343/Group_Project/#/',
+			github: 'http://students.washington.edu/dhan206/INFO343/Group_Project/#/'
+		},
+		{
+			image: 'img/concerts.png',
+			text: 'This website finds concerts and music festivals and places them on a map for you. You can filter by city or date and even listen to the artist\'s top hit on spotify!',
+			id: 3,
+			name: 'ConcertFindr',
+			link: 'http://students.washington.edu/dhan206/INFO343/Group_Project/#/',
+			github: 'http://students.washington.edu/dhan206/INFO343/Group_Project/#/'
+		}
+	];
+})
+
 .controller('AboutCtrl', ['$scope', '$http', function($scope, $http) {
 
 }])
@@ -49,3 +91,41 @@ angular.module('PortfolioApp' ,['ui.router', 'ui.bootstrap'])
 .controller('ConnectCtrl', ['$scope', '$http', function($scope, $http) {
 
 }])
+	
+
+
+
+			    // 	<a href="http://students.washington.edu/dhan206/INFO343/Group_Project/#/">
+			    //     	<img class="car-img" src="img/concerts.png" alt="ConcertFindr" >
+			    //   	</a>
+			    //   	<h2><a class="link" href="http://students.washington.edu/dhan206/INFO343/Group_Project/#/">ConcertFindr</a></h2>
+				  	// <p>This website finds concerts and music festivals and places them on a map for you. You can filter by city or date and even listen to the artist's top hit on spotify!</p>
+				  	// <p><a class="link" href="https://github.com/dhan206/Group_Project">GitHub</a></p>
+			    // </div>
+
+			    // <div class="item">
+			    // 	<a href="http://students.washington.edu/kaiyosh/info343/challenges/dawg-coffee/#/">
+			    //   		<img class="car-img" src="img/coffee.png" alt="Dawg Coffee">
+			    //   	</a>
+			    //   	<h2><a class="link" href="http://students.washington.edu/kaiyosh/info343/challenges/dawg-coffee/#/">Dawg Coffee</a></h2>
+				  	// <p>Here I built a very fun mock marketing and e-commerce site. It has afunctional shopping cart and other useful responisve features.</p>
+				  	// <p><a class="link" href="https://github.com/kaiyoshino/website-projects/tree/master/dawg-coffee">GitHub</a></p>
+			    // </div>
+
+			    // <div class="item">
+			    //   	<a href="https://github.com/kaiyoshino/geopaint">
+			    //    		<img class="car-img" src="img/paint_full.png" alt="GeoPainter" href="">
+			    //   	</a>
+			    //   	<h2>GeoPainter</h2>
+				  	// <p>This android app tracks your location and paints your movement!</p>
+				  	// <p><a class="link" href="https://github.com/kaiyoshino/geopaint">GitHub</a></p>
+			    // </div>
+
+			    // <div class="item">
+			    //   	<a href="http://students.washington.edu/kaiyosh/info343/challenges/shooting-map/#/">
+			    //   		<img class="car-img" src="img/shooting_map.png" alt="Shooting Map" href="">
+			    //   	</a>
+			    //   	<h2><a class="link" href="http://students.washington.edu/kaiyosh/info343/challenges/shooting-map/#/">Shooting Map</a></h2>
+				  	// <p>Infographic website that displays police shooting data on an interactive map.</p>
+				  	// <p><a class="link" href="https://github.com/kaiyoshino/website-projects/tree/master/shooting-map">GitHub</a></p>
+			    // </div>
