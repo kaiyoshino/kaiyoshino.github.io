@@ -31,7 +31,7 @@ canvas {
 
 .landing {
 	position: absolute;
-	top: 20%; 
+	top: 15%; 
   width: 100%;
 	color: #ffffff;
 	font-family: 'Open Sans', sans-serif;
@@ -47,20 +47,20 @@ canvas {
 }
 
 #name {
-  font-size: 450%;
-  margin: 1%;
+  font-size: 400%;
+  margin: .25%;
 }
 
 .subtitle {
-	font-size: 140%;
-  margin: .5%;
+	font-size: 130%;
+  margin: .25%;
 }
 
 
 .nav {
-  margin: 1%;
+  margin: .9%;
   font-style: italic;
-  font-size: 150%;
+  font-size: 140%;
 }
 
 @media only screen and (max-device-width: 640px){
