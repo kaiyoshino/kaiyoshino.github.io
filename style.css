@@ -65,20 +65,21 @@ canvas {
 }
 
 @media only screen and (max-device-width: 640px){
- 
-#me{width: 50%;
-  height: 50%;}
-#name{font-size:90pt}
-.subtitle{font-size:35pt}
-.nav{font-size:39pt}
+  .content {font-size: 35pt;}
+  #me{width: 50%;
+    height: 50%;}
+  #name{font-size:90pt}
+  .subtitle{font-size:35pt}
+  .nav{font-size:39pt}
 }
 
 @media only screen and (max-device-width: 1080px) and (-webkit-device-pixel-ratio: 3){
-#me{width: 40%;
-  height: 40%;}
-#name{font-size:120pt}
-.subtitle{font-size:50pt}
-.nav{font-size:58pt}
+  .content {font-size: 50pt;}
+  #me{width: 40%;
+    height: 40%;}
+  #name{font-size:120pt}
+  .subtitle{font-size:50pt}
+  .nav{font-size:58pt}
 }
 
 /****************************************************/
