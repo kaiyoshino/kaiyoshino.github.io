@@ -1,0 +1,59 @@
+
+/* gradient fallbacks taken from csstricks.com */
+body {
+  background-color: #0b354c;
+  
+  /* SVG fallback for IE 9 (could be data URI, or could use filter) */
+  background-image: url(img/dark_gradient.jpg);
+  
+  /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+  background-image: -webkit-gradient(linear, left top, right top, from(#350032), to(#0b354c));
+  
+  /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+  background-image: -webkit-linear-gradient(left, #350032, #0b354c);
+  
+  /* Firefox 3.6 - 15 */
+  background-image: -moz-linear-gradient(left, #350032, #0b354c);
+  
+  /* Opera 11.1 - 12 */
+  background-image: -o-linear-gradient(left, #350032, #0b354c);
+  
+  /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+  background-image: linear-gradient(to right, #350032, #0b354c);
+  margin: 0px;
+  overflow: hidden;
+}
+
+body { 
+	margin: 0px; 
+	padding: 0px;
+	overflow: hidden;
+}
+
+canvas { 
+	width: 100%; 
+	height: 100% 
+}
+
+.landing {
+	position: absolute;
+	top: 20%; width: 100%;
+	color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 125%;
+	text-align:center;
+}
+
+p {
+	margin: .2em;
+}
+
+#name {
+	font-size:3em;
+}
+
+#me {
+	width: 20%;
+    height: 20%;
+    border-radius: 100%;
+}
