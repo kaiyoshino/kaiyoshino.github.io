@@ -94,7 +94,7 @@ body {
 
 
 .navigation {
-  margin: .9%;
+  margin: 1%;
   font-style: italic;
   font-size: 150%;
   color: white;
@@ -187,8 +187,10 @@ body {
   #me{width: 50%;
     height: 50%;}
   #name{font-size:90pt}
-  .subtitle{font-size:35pt}
-  .navigation{font-size:39pt}
+  .subtitle{font-size:30pt}
+  .navigation{font-size:35pt;
+    margin: 1.5%;}
+
 }
 
 @media only screen and (max-device-width: 1080px) and (-webkit-device-pixel-ratio: 3){
@@ -200,5 +202,6 @@ body {
     height: 40%;}
   #name{font-size:120pt}
   .subtitle{font-size:50pt}
-  .navigation{font-size:58pt}
+  .navigation{font-size:58pt;
+    margin: 1.5%}
 }
