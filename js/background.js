@@ -51,36 +51,36 @@ var particles = [];
 		}
 
 		scene.add(particles[i]);
-		camera.lookAt( scene.position );
 	}
 
+	// document.getElementById("canvas").style.display = 'inline';
 	$('canvas').hide()
 	document.body.appendChild(renderer.domElement);
 	renderer.render( scene, camera );
 
-	window.addEventListener( 'resize', onWindowResize(), false);
+	// window.addEventListener( 'resize', onWindowResize(), false);
 }
 
-onWindowResize = function () {
+// onWindowResize = function () {
 
-	resizeCanvas();
+// 	resizeCanvas();
 
-};
+// };
 
-resizeCanvas = function () {
+// resizeCanvas = function () {
 
-	contW = $( document ).width();
-	contH = $( document ).height();
+// 	contW = $( document ).width();
+// 	contH = $( document ).height();
 
-	windowHalfX = contW / 2;
-	windowHalfY = contH / 2;
+// 	windowHalfX = contW / 2;
+// 	windowHalfY = contH / 2;
 
-	camera.aspect = contW / contH;
-	camera.updateProjectionMatrix();
+// 	camera.aspect = contW / contH;
+// 	camera.updateProjectionMatrix();
 
-	renderer.setSize( contW, contH );
+// 	renderer.setSize( contW, contH );
 
-};
+// };
 
  function animate() {
 	requestAnimationFrame( animate );
