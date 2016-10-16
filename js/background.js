@@ -8,7 +8,6 @@
 var camera, scene, renderer, controls;
 var contW = $( document ).width();
 var contH = $( document ).height();
-console.log(contW + " W &  " + contH)
 var particleCount = 5000 
 var particleGeometry = new THREE.SphereGeometry(2, 32, 32); // size and number of circle polys
 var particleMaterial = new THREE.MeshBasicMaterial({
@@ -18,8 +17,11 @@ var particleMaterial = new THREE.MeshBasicMaterial({
 });
 var particles = [];
 
+// start
+init();
+animate();
 
- function init() {
+function init() {
 
 	scene = new THREE.Scene();
 	camera = new THREE.PerspectiveCamera( 75, (contW / contH), 1, 1100);
@@ -57,30 +59,29 @@ var particles = [];
 	document.body.appendChild(renderer.domElement);
 	renderer.render( scene, camera );
 
-	// window.addEventListener( 'resize', onWindowResize(), false);
 }
 
-// onWindowResize = function () {
 
-// 	resizeCanvas();
 
-// };
 
 $( window ).resize(function() {
+ 	resize();
+});
+
+
+
+function resize() {
 	contW = $( document ).width();
 	contH = $( document ).height();
-
-	windowHalfX = contW / 2;
-	windowHalfY = contH / 2;
 
 	camera.aspect = contW / contH;
 	camera.updateProjectionMatrix();
 
 	renderer.setSize( contW, contH );
 
-});
+}
 
- function animate() {
+ function animate() {	
 	requestAnimationFrame( animate );
 	controls.update();
 
@@ -97,6 +98,3 @@ $( window ).resize(function() {
 	renderer.render( scene, camera );
 }
 
-// start
-init();
-animate();

@@ -83,12 +83,12 @@ body {
 }
 
 #name {
-  font-size: 400%;
+  font-size: 450%;
   margin: .25%;
 }
 
 .subtitle {
-	font-size: 130%;
+	font-size: 140%;
   margin: .25%;
 }
 
@@ -96,7 +96,7 @@ body {
 .navigation {
   margin: .9%;
   font-style: italic;
-  font-size: 140%;
+  font-size: 150%;
   color: white;
 }
 
@@ -120,7 +120,7 @@ body {
 
 .content {
   padding: 5%;
-  font-size: 160%;
+  font-size: 165%;
 }
 
 
@@ -144,7 +144,7 @@ body {
 }
 
 .carousel-img {
-  margin:auto;
+  margin: 4%;
   width: 90%;
 }
 
@@ -171,6 +171,10 @@ body {
     background-image: none
 }
 
+.glyphicon-chevron-right, .glyphicon-chevron-left {
+  color: white;
+  text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+}
 
 
 
@@ -184,7 +188,7 @@ body {
     height: 50%;}
   #name{font-size:90pt}
   .subtitle{font-size:35pt}
-  .nav{font-size:39pt}
+  .navigation{font-size:39pt}
 }
 
 @media only screen and (max-device-width: 1080px) and (-webkit-device-pixel-ratio: 3){
@@ -196,5 +200,5 @@ body {
     height: 40%;}
   #name{font-size:120pt}
   .subtitle{font-size:50pt}
-  .nav{font-size:58pt}
+  .navigation{font-size:58pt}
 }

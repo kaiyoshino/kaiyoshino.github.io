@@ -1,4 +1,4 @@
-angular.module('PortfolioApp', ['ui.router', 'ui.bootstrap'])
+angular.module('PortfolioApp', ['ngAnimate', 'ui.router', 'ui.bootstrap'])
 .controller('LandingCtrl', ['$scope', '$http', function($scope, $http) {
 
 }])
@@ -31,11 +31,20 @@ angular.module('PortfolioApp', ['ui.router', 'ui.bootstrap'])
 			templateUrl: 'partials/connect.html',
 			controller: 'ConnectCtrl'
 		})
+
+
 })
 
 // sends to landing if url is not provided
 .config(function($urlRouterProvider) {
 	$urlRouterProvider.otherwise('/');
+})
+
+.run(function($rootScope) {
+	$rootScope.$on('$stateChangeSuccess', 
+	function(event, toState, toParams, fromState, fromParams){ 
+		resize();
+	})
 })
 
 .controller('CarouselCtrl', function ($scope) {
@@ -54,28 +63,28 @@ angular.module('PortfolioApp', ['ui.router', 'ui.bootstrap'])
 			github: 'https://github.com/dhan206/Group_Project'
 		},
 		{
-			image: 'img/concerts.png',
-			text: 'This website finds concerts and music festivals and places them on a map for you. You can filter by city or date and even listen to the artist\'s top hit on spotify!',
+			image: 'img/coffee.png',
+			text: 'Here I built a very fun mock marketing and e-commerce site. It has afunctional shopping cart and other useful responisve features.',
 			id: 1,
-			name: 'ConcertFindr',
-			link: 'http://students.washington.edu/kaiyosh/info343/challenges/Group_Project/#/',
-			github: 'https://github.com/dhan206/Group_Project'
+			name: 'Dawg Coffee',
+			link: 'http://students.washington.edu/kaiyosh/info343/challenges/dawg-coffee/#/',
+			github: 'https://github.com/kaiyoshino/website-projects/tree/master/dawg-coffee'
 		},
 		{
-			image: 'img/concerts.png',
-			text: 'This website finds concerts and music festivals and places them on a map for you. You can filter by city or date and even listen to the artist\'s top hit on spotify!',
+			image: 'img/paint_full.png',
+			text: 'This android app tracks your location and paints your movement!',
 			id: 2,
-			name: 'ConcertFindr',
-			link: 'http://students.washington.edu/kaiyosh/info343/challenges/Group_Project/#/',
-			github: 'https://github.com/dhan206/Group_Project'
+			name: 'GeoPainter',
+			link: 'https://github.com/kaiyoshino/geopaint',
+			github: 'link" href="https://github.com/kaiyoshino/geopaint'
 		},
 		{
-			image: 'img/concerts.png',
-			text: 'This website finds concerts and music festivals and places them on a map for you. You can filter by city or date and even listen to the artist\'s top hit on spotify!',
+			image: 'img/shooting_map.png',
+			text: 'Infographic website that displays police shooting data on an interactive map.',
 			id: 3,
-			name: 'ConcertFindr',
-			link: 'http://students.washington.edu/kaiyosh/info343/challenges/Group_Project/#/',
-			github: 'https://github.com/dhan206/Group_Project'
+			name: 'Shootings',
+			link: 'http://students.washington.edu/kaiyosh/info343/challenges/shooting-map/#/',
+			github: 'ttps://github.com/kaiyoshino/website-projects/tree/master/shooting-map'
 		}
 	];
 })
@@ -91,35 +100,8 @@ angular.module('PortfolioApp', ['ui.router', 'ui.bootstrap'])
 .controller('ConnectCtrl', ['$scope', '$http', function($scope, $http) {
 
 }])
-	
 
 
-
-			    // 	<a href="https://github.com/dhan206/Group_Project">
-			    //     	<img class="car-img" src="img/concerts.png" alt="ConcertFindr" >
-			    //   	</a>
-			    //   	<h2><a class="link" href="https://github.com/dhan206/Group_Project">ConcertFindr</a></h2>
-				  	// <p>This website finds concerts and music festivals and places them on a map for you. You can filter by city or date and even listen to the artist's top hit on spotify!</p>
-				  	// <p><a class="link" href="https://github.com/dhan206/Group_Project">GitHub</a></p>
-			    // </div>
-
-			    // <div class="item">
-			    // 	<a href="http://students.washington.edu/kaiyosh/info343/challenges/dawg-coffee/#/">
-			    //   		<img class="car-img" src="img/coffee.png" alt="Dawg Coffee">
-			    //   	</a>
-			    //   	<h2><a class="link" href="http://students.washington.edu/kaiyosh/info343/challenges/dawg-coffee/#/">Dawg Coffee</a></h2>
-				  	// <p>Here I built a very fun mock marketing and e-commerce site. It has afunctional shopping cart and other useful responisve features.</p>
-				  	// <p><a class="link" href="https://github.com/kaiyoshino/website-projects/tree/master/dawg-coffee">GitHub</a></p>
-			    // </div>
-
-			    // <div class="item">
-			    //   	<a href="https://github.com/kaiyoshino/geopaint">
-			    //    		<img class="car-img" src="img/paint_full.png" alt="GeoPainter" href="">
-			    //   	</a>
-			    //   	<h2>GeoPainter</h2>
-				  	// <p>This android app tracks your location and paints your movement!</p>
-				  	// <p><a class="link" href="https://github.com/kaiyoshino/geopaint">GitHub</a></p>
-			    // </div>
 
 			    // <div class="item">
 			    //   	<a href="http://students.washington.edu/kaiyosh/info343/challenges/shooting-map/#/">
@@ -128,4 +110,4 @@ angular.module('PortfolioApp', ['ui.router', 'ui.bootstrap'])
 			    //   	<h2><a class="link" href="http://students.washington.edu/kaiyosh/info343/challenges/shooting-map/#/">Shooting Map</a></h2>
 				  	// <p>Infographic website that displays police shooting data on an interactive map.</p>
 				  	// <p><a class="link" href="https://github.com/kaiyoshino/website-projects/tree/master/shooting-map">GitHub</a></p>
-			    // </div>
+
