@@ -159,11 +159,9 @@ body {
     position: relative;
     left: auto;
     right: auto;
-    font-size: 125%;
-}
-
-.carousel-caption  {
-    font-size: 130%
+    font-size: 130%;
+    margin-right: 7%;
+    margin-left: 7%;
 }
 
 
