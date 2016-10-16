@@ -195,6 +195,7 @@ body {
   .connect-images img { width: 23%;
   height: 23%;}
   .carousel-caption  {font-size: 160%}
+  .partial{ min-height: 30vh }
 }
 
 @media only screen and (max-device-width: 1080px) and (-webkit-device-pixel-ratio: 3){
@@ -211,4 +212,5 @@ body {
   .connect-images img { width: 23%;
   height: 23%;}
   .carousel-caption  {font-size: 140%}
+  .partial{ min-height: 35vh }
 }
