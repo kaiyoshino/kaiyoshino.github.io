@@ -117,7 +117,6 @@ body {
 /****************************************************/
 
 
-
 .content {
   padding: 5%;
   font-size: 165%;
@@ -163,6 +162,11 @@ body {
     font-size: 125%;
 }
 
+.carousel-caption  {
+    font-size: 130%
+}
+
+
 .carousel-caption p {
     color: black;
 }
@@ -190,7 +194,9 @@ body {
   .subtitle{font-size:30pt}
   .navigation{font-size:35pt;
     margin: 1.5%;}
-
+  .connect-images img { width: 23%;
+  height: 23%;}
+  .carousel-caption  {font-size: 150%}
 }
 
 @media only screen and (max-device-width: 1080px) and (-webkit-device-pixel-ratio: 3){
@@ -204,4 +210,7 @@ body {
   .subtitle{font-size:50pt}
   .navigation{font-size:58pt;
     margin: 1.5%}
+  .connect-images img { width: 23%;
+  height: 23%;}
+  .carousel-caption  {font-size: 140%}
 }
