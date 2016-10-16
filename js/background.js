@@ -53,7 +53,6 @@ var particles = [];
 		scene.add(particles[i]);
 	}
 
-	// document.getElementById("canvas").style.display = 'inline';
 	$('canvas').hide()
 	document.body.appendChild(renderer.domElement);
 	renderer.render( scene, camera );
@@ -67,20 +66,19 @@ var particles = [];
 
 // };
 
-// resizeCanvas = function () {
+$( window ).resize(function() {
+	contW = $( document ).width();
+	contH = $( document ).height();
 
-// 	contW = $( document ).width();
-// 	contH = $( document ).height();
+	windowHalfX = contW / 2;
+	windowHalfY = contH / 2;
 
-// 	windowHalfX = contW / 2;
-// 	windowHalfY = contH / 2;
+	camera.aspect = contW / contH;
+	camera.updateProjectionMatrix();
 
-// 	camera.aspect = contW / contH;
-// 	camera.updateProjectionMatrix();
+	renderer.setSize( contW, contH );
 
-// 	renderer.setSize( contW, contH );
-
-// };
+});
 
  function animate() {
 	requestAnimationFrame( animate );
