@@ -71,13 +71,21 @@ $( window ).resize(function() {
 
 
 function resize() {
+
+	// contW = window.innerWidth;
+	// contH = window.innerHeight;
+
+	// renderer.setSize( contW, contH );
+
+
 	contW = $( document ).width();
 	contH = $( document ).height();
 
 	camera.aspect = contW / contH;
 	camera.updateProjectionMatrix();
-
+	
 	renderer.setSize( contW, contH );
+	
 
 }
 

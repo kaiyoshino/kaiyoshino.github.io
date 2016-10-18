@@ -43,7 +43,7 @@ angular.module('PortfolioApp', ['ngAnimate', 'ui.router', 'ui.bootstrap'])
 .run(function($rootScope) {
 	$rootScope.$on('$stateChangeSuccess', 
 	function(event, toState, toParams, fromState, fromParams){ 
-		resize();
+		$(document).ready(function() {resize()});
 	})
 })
 
@@ -72,7 +72,7 @@ angular.module('PortfolioApp', ['ngAnimate', 'ui.router', 'ui.bootstrap'])
 		},
 		{
 			image: 'img/paint_full.png',
-			text: 'This android app tracks your location and paints your movement!',
+			text: 'This android app tracks your location and paints your movement as you go.',
 			id: 2,
 			name: 'GeoPainter',
 			link: 'https://github.com/kaiyoshino/geopaint',
