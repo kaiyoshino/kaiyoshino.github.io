@@ -1,14 +1,12 @@
-/*a {
-  color: #4169E1;
-}*/
+a {
+  color: white;
+}
 
 a:link {
-  color: #4169E1;
   text-decoration: none;
 }
 
 a:visitied {
-  color: #4169E1;
   text-decoration: none;
 }
 
