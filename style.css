@@ -1,21 +1,21 @@
-a {
+a .navigation {
   color: white;
 }
 
-a:link {
+a:link .navigation {
   text-decoration: none;
 }
 
-a:visitied {
+a:visitied .navigation {
   text-decoration: none;
 }
 
-a:hover {
+a:hover .navigation {
   color: #4169E1;
   text-decoration: underline;
 }
 
-a:active {
+a:active .navigation {
   color: #4169E1 !important;
   text-decoration: underline;
 }
